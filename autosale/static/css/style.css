@@ -37,3 +37,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* почему файл css не меняется при отображении в консоли??? */
+
+.list-of-cars {  
+    max-width: 300px;
+    max-height: 300px;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+
+

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<!-- { % load img % }   -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+{% block title %}Список моделей{% endblock %}
+
+{% block content %}
+    <h2> Предлагаем к рассмотрению несколько замечтательных авто: </h2>
+    <ul>
+        {% for car in cars%}
+        <li>
+            <h3> {{car.mark}} {{car.model}} </h3>
+            <img class = "list-of-cars" src="/static{{car.picture.url}}"  >
+            <!-- <p>{{car.picture.url}}
+            <img src="/img/rav4.jpg"> -->
+        </li>
+
+        {% endfor%}
+
+    </ul>
+{% endblock %}
